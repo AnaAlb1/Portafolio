@@ -1,0 +1,87 @@
+:root{
+    --primary:#8c5b97;
+    --fontFirst: 'Poppins', sans-serif;
+    --fontColor:#ffffff;
+    --hover: #674575;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{    
+    font-family: var(--fontFirst);
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+h1, h2, h3, a, p, ul, li{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+.header{
+    background-color: var(--primary);
+}
+.header__container{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.2rem 0;
+}
+.nav__logo{
+    color: var(--fontColor);  
+    font-size: 5rem;  
+    font-family: 'Emilys Candy', cursive;
+}
+.nav__ul{
+    display: flex;
+    gap: 6rem;    
+}
+.nav__link{
+    color: var(--fontColor);
+    padding: .8rem 1.6rem;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: .4s;
+}
+.nav__link:hover{
+    background-color: var(--hover);
+    border-radius: .5rem;
+}
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.hero__text{
+    align-self: center;
+}
+.text__heading{
+    color: var(--fontColor);
+    font-size: 4rem;
+}
+.text__p{
+    color: var(--fontColor);
+    font-size: 2rem;
+}
+.hero__images{
+    display: grid;
+}
